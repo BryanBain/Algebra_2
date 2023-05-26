@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{amsmath, bm, enumerate, pgfplots, sfmath, multicol, tcolorbox}
+\pgfplotsset{compat = newest}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[top=0.5in, right=1in, bottom=0.5in, left=1in]{geometry}
+\pagestyle{empty}
+\raggedright
+\everymath{\displaystyle}
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   {\color{red}\textbf{Example~\theexample. #1}}}{\medskip}
+
+\begin{document}
+
+\section*{Solving Rational Equations}
+
+\begin{tcolorbox}[colframe=orange!70!white, coltitle=black, title=\textbf{Summary}]
+\begin{enumerate}
+    \item Multiplying every term by the least common denominator will eliminate all rational expressions.
+    \item Watch out for values that cause the denominator to equal 0. \textbf{You don't want these values in your answer.}
+\end{enumerate}
+\end{tcolorbox}
+\bigskip 
+
+In this section we will look at solving equations containing rational functions. 
+\bigskip 
+
+\begin{itemize}
+    \item We will eliminate our fractions by multiplying everything on both sides by the least common denominator.
+    \item However, because our fractions contain variables in the denominator, we must remember that the {\color{blue}\textbf{denominator can never equal zero}}. 
+    \item Thus, we must always check for \emph{extraneous solutions} when solving rational equations and inequalities. 
+\end{itemize}
+\vspace{0.25in}
+
+\begin{example}
+Solve each. Don't forget to check for extraneous solutions.\newline\\
+\begin{enumerate}[(a)]
+\begin{multicols}{2}
+	\item \quad $\frac{x+4}{2x} + \frac{x+20}{3x} = 3$ 
+	\item \quad $\frac{x+6}{2x} + \frac{x+24}{5x} = 2$
+\end{multicols}
+\newpage 
+\begin{multicols}{2}
+	\item \quad $\frac{x+1}{x+10} = \frac{x-2}{x+4}$
+	\item \quad $\frac{x-3}{x+1} = \frac{2}{x+6}$
+\end{multicols}
+\vfill 
+\begin{multicols}{2}
+    % \item $\frac{3}{x^2-7x+10} + 2 = \frac{x-4}{x-5}$
+% 	\item $\frac{x}{x-3} = \frac{3}{x-3}+9$
+% 	\item $\frac{8x}{x+1}=4-\frac{8}{x+1}$
+% 	\item \quad $\frac{x}{3}+\frac{9}{x}=4$ \vfill 
+% 	\item \quad $\frac{x}{2}+\frac{12}{x}=5$ \vfill 
+	\item $\frac{2x}{x-3}+\frac{6}{x+3}=\frac{-28}{x^2-9}$
+	\item $\frac{3}{x-3}+\frac{5}{x-4}=\frac{x^2-20}{x^2-7x+12}$
+\end{multicols}
+\end{enumerate}
+\end{example}
+\vfill 
+
+\end{document}

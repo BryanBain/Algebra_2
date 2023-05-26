@@ -1,0 +1,135 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, enumerate, tikz, multicol, hyperref, sfmath, pgfplots, tcolorbox}
+\pgfplotsset{compat = newest}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[top = 0.5in, bottom=0.5in, right = 1in, left = 1in]{geometry}
+\tikzset{>=stealth}
+\pagestyle{empty}
+\raggedright
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   {\color{red}\textbf{Example~\theexample. #1}}}{\medskip}
+
+\begin{document}
+
+\section*{Greatest Common Factor}
+
+\begin{tcolorbox}[colframe=orange!70!white, coltitle=black, title=\textbf{Summary}]
+\begin{enumerate}
+    \item For numbers, find the greatest common factor (a.k.a. greatest common divisor).
+    \item For variables, pick the lowest power of each variable expression.
+\end{enumerate}
+\end{tcolorbox}
+\vspace{1.5in}
+
+Typically, when the first term is negative, include that negative when factoring out the GCF.
+
+\vspace{1in}
+
+\begin{example}
+Factor the greatest common factor (GCF) from each.
+\begin{multicols}{2}
+\begin{enumerate}[(a)]
+    \item $21x^2 + 28x$
+    \item $20x^2+30x$
+\end{enumerate}
+\end{multicols}
+\vspace{2in}
+\begin{multicols}{2}
+\begin{enumerate}[(a)]  \setcounter{enumi}{2}
+    \item $-3x^3+12x^2$
+    \item $-2x^3+10x^2$
+\end{enumerate}
+\end{multicols}
+\end{example}
+
+
+\newpage 
+
+When factoring trinomials, sometimes you can still factor what remains after factoring out the GCF.
+
+\vspace{2in}
+
+\begin{example}
+Factor each \emph{completely}.
+\begin{multicols}{2}
+\begin{enumerate}[(a)]
+    \item $3x^2 + 6x + 48$
+    \item $2x^2 - 20x - 120$
+\end{enumerate}
+\end{multicols}
+\vfill 
+\begin{multicols}{2}
+\begin{enumerate}[(a)]  \setcounter{enumi}{2}
+    \item $5x^2 - 45x + 90$
+    \item $4x^2 + 12x - 40$
+\end{enumerate}
+\end{multicols}
+\end{example}
+
+\vfill 
+
+% \subsection*{Negative First Term}
+
+% Typically, when the first term is negative, include that negative when factoring out the GCF.
+% \vspace{1in}
+
+% \begin{example}
+% Factor each.
+% \begin{multicols}{2}
+% \begin{enumerate}[(a)]
+%     \item $-3x^3+12x^2-15x$
+%     \item $-2x^3+10x^2-6x$
+% \end{enumerate}
+% \end{multicols}
+% \end{example}
+% \vfill 
+
+% \subsection*{Factoring Out Binomial Expressions}
+
+% You can also factor out binomials as the GCF. \vspace{1in}
+
+% \begin{example}
+% Factor each.
+% \begin{multicols}{2}
+% \begin{enumerate}
+%     \item $2x(x-7)+9(x-7)$
+%     \item $3x(x-4)+7(x-4)$
+% \end{enumerate}
+% \end{multicols}
+% \vspace{1.5in}
+% \begin{multicols}{2}
+% \begin{enumerate}   \setcounter{enumi}{2}
+%     \item $5x(2x+1)-(2x+1)$
+%     \item $7x(x+3)-(x+3)$
+% \end{enumerate}
+% \end{multicols}
+% \end{example}
+% \vfill 
+% \newpage 
+
+% \subsection*{Factoring By Grouping}
+
+% We now combine factoring GCFs and the previous example using 2 terms at a time.
+% \vspace{1in}
+
+% \begin{example}
+% Factor each by grouping.
+% \begin{multicols}{2}
+% \begin{enumerate}[(a)]
+%     \item $x^2 + 8x + 2x + 16$
+%     \item $x^2 - 5x - 7x + 35$
+% \end{enumerate}
+% \end{multicols}
+% \vfill 
+% \begin{multicols}{2}
+% \begin{enumerate}[(a)]  \setcounter{enumi}{2}
+%     \item $x^2 + x - 6x - 6$
+%     \item $x^2 + 9x - 4x - 36$
+% \end{enumerate}
+% \end{multicols}
+% \vfill 
+% \end{example}
+
+\end{document}

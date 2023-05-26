@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{amsmath, bm, enumerate, multicol, pgfplots, sfmath, tcolorbox}
+\pgfplotsset{compat = newest}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[top=0.5in, right=1in, bottom=0.5in, left=1in]{geometry}
+\pagestyle{empty}
+\raggedright
+\everymath{\displaystyle}
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   {\color{red}\textbf{Example~\theexample. #1}}}{\medskip}
+
+\begin{document}
+
+\section*{Multiplying Radical Expressions}
+
+\begin{tcolorbox}[colframe=orange!70!white, coltitle=black, title=\textbf{Summary}]
+\begin{enumerate}
+    \item We can multiply radical expressions by using many of the same properties used to multiply polynomial expressions.
+\end{enumerate}
+\end{tcolorbox}
+\vspace{0.5in}
+
+
+We just multiply like radicals and simplify.
+
+\begin{example}
+Multiply each and simplify.
+\begin{multicols}{2}
+\begin{enumerate}[(a)]
+    \item $\sqrt{3}\left(5 + \sqrt{30}\right)$   
+    \item $\sqrt{5}\left(2 - \sqrt{15}\right)$  
+\end{enumerate}
+\end{multicols}
+\vfill 
+\begin{multicols}{2}
+\begin{enumerate}[(a)]  \setcounter{enumi}{2}
+    \item $\left(\sqrt{5}-\sqrt{6}\right)\left(\sqrt{7}+1\right)$
+    \item $\left(\sqrt{2}-\sqrt{5}\right)\left(\sqrt{6}+2\right)$
+\end{enumerate}
+\end{multicols}
+\vfill 
+\end{example}
+
+\newpage 
+
+\begin{example}
+Multiply each and simplify.
+\begin{enumerate}[(a)]
+    \item $\left(7\sqrt{x}+5\right)\left(3\sqrt{x}-\sqrt{5}\right)$  \vfill 
+    \item $\left(4\sqrt{3}-1\right)^2$  \vfill 
+    \item $\left(\sqrt{2x}-5\right)\left(\sqrt{2x}+5\right)$    \vfill 
+\end{enumerate}
+\end{example}
+
+
+
+\end{document}

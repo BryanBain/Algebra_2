@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, bm, tikz, mathtools, tcolorbox, array, sfmath, enumerate, multicol, pgfplots}
+\renewcommand{\familydefault}{\sfdefault}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{arrows.meta}
+\everymath{\displaystyle}
+\tikzset{>=stealth}
+\tikzstyle{input} = [circle, text centered, radius = 1cm, draw = black]
+\tikzstyle{function} = [rectangle, text centered, minimum width = 2cm, minimum height = 1cm, draw = black]
+\usepackage[top = 0.25in, bottom = 0.25in, left = 1in, right = 1in]{geometry}
+\pagestyle{empty}
+\raggedright
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   {\color{red}\textbf{Example~\theexample. #1}}}{\medskip}
+
+\begin{document}
+
+\section*{Simplifying Rational Expressions}
+
+\begin{tcolorbox}[colframe=orange!70!white, coltitle=black, title=\textbf{Summary}]
+\begin{enumerate}
+    \item Simplify rational expressions by factoring the numerator and denominator; then divide common factors.
+\end{enumerate}
+\end{tcolorbox}
+\bigskip
+
+\textsc{To simplify rational expressions:}
+\begin{enumerate}
+    \item Factor the numerator and denominator completely.
+    \item Divide any common factors.
+\end{enumerate}
+\bigskip 
+
+\begin{example}
+Simplify each completely.
+\begin{enumerate}[(a)]
+\begin{multicols}{2}
+    \item $\frac{x+1}{x^2+4x+3}$
+    \item $\frac{x^2+7x+10}{5x+10}$
+\end{multicols}
+\vfill 
+\begin{multicols}{2}
+    \item $\frac{x^2-7x-18}{2x^2+3x-2}$
+    \item $\frac{x^2-2x-15}{3x^2+8x-3}$ 
+\end{multicols}
+\end{enumerate}
+\end{example}
+
+\vfill 
+
+\end{document}

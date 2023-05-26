@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{amsmath, tikz, tcolorbox, array, multicol, sfmath, enumerate, pgfplots}
+\renewcommand{\familydefault}{\sfdefault}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{arrows.meta}
+\everymath{\displaystyle}
+\tikzset{>=stealth}
+\usepackage[top = 0.25in, bottom = 0.25in, left = 1in, right = 1in]{geometry}
+\pagestyle{empty}
+\raggedright
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   {\color{red}\textbf{Example~\theexample. #1}}}{\medskip}
+
+\begin{document}
+
+\section*{Radical Equations}
+
+\begin{tcolorbox}[colframe=orange!70!white, coltitle=black, title=\textbf{Summary}]
+\begin{enumerate}
+    \item When solving radical equations, get the radical by itself and raise both sides to the root's power.
+    \item You will need to check that your answers don't result in square roots of negative values.
+\end{enumerate}
+\end{tcolorbox}
+\vspace{1in}
+
+\begin{example}
+Solve each. Check your answers for extraneous solutions.
+\begin{enumerate}[(a)]
+    \item $\sqrt{2x-3}=9$   \vfill 
+    \item $\sqrt{-10x-1}+3x=0$  \vfill \newpage 
+    \item $\sqrt[3]{x+1}+5=3$   \vfill 
+    \item $\sqrt{4-x}=x-2$  \vfill 
+\end{enumerate}
+\end{example}
+
+\end{document}

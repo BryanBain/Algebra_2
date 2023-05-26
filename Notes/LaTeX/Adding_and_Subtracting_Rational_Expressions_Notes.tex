@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage{amsmath, bm, enumerate, pgfplots, sfmath, tcolorbox, multicol}
+\pgfplotsset{compat = newest}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[top=0.5in, right=1.25in, bottom=0.5in, left=1.25in]{geometry}
+\pagestyle{empty}
+\raggedright
+\everymath{\displaystyle}
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   {\color{red}\textbf{Example~\theexample. #1}}}{\medskip}
+
+\begin{document}
+
+\section*{Adding and Subtracting Rational Expressions}
+
+\begin{tcolorbox}[colframe=orange!70!white, coltitle=black, title=\textbf{Summary}]
+\begin{enumerate}
+    \item Adding \& subtracting rational expressions is the algebraic version of adding and subtracting fractions.
+    \item You will \textbf{always} need a common denominator before adding or subtracting rational expressions.
+\end{enumerate}
+\end{tcolorbox}
+\bigskip
+
+\subsection*{Like denominators}
+
+To add or subtract fractions with {\color{blue}\textbf{like denominators}}, you keep the denominators and add (or subtract) the numerators. \newline\\	
+
+Remember to \underline{distribute the sign} to the numerator in the second fraction.
+\bigskip 
+
+\begin{example}
+Simplify each.
+\begin{enumerate}[(a)]
+\begin{multicols}{2}
+    \item $\frac{-8}{2x+7} + \frac{-9}{2x+7}$
+    \item $\frac{5x^3}{3x-1} - \frac{6x^3}{3x-1}$
+\end{multicols}
+\vfill 
+\begin{multicols}{2}
+    \item $\frac{3x+3}{3x+2} + \frac{4x-2}{3x+2}$
+    \item $\frac{2x+1}{6x^2} - \frac{7x-2}{6x^2}$
+\end{multicols}
+\end{enumerate}
+\end{example}
+\vfill 
+\newpage
+
+\subsection*{Unlike denominators}
+
+\begin{itemize}
+    \item Need a common denominator \emph{before} adding or subtracting fractions.
+    \item For instance
+    \[
+    \frac{2}{5} + \frac{1}{3}
+    \]
+    \vspace{0.25in}
+    \item {\color{blue}\textbf{Factor the denominators completely}}
+\end{itemize}
+
+
+\begin{example}
+Simplify each.
+\begin{enumerate}[(a)]
+\begin{multicols}{2}
+    \item $\frac{5}{2x} + \frac{1}{4x}$
+    \item $\frac{3x}{2x-1} + \frac{7}{5x+3}$
+\end{multicols}
+\vfill
+\begin{multicols}{2}
+    \item $\frac{2x+1}{x-5} + \frac{2}{x}$
+    \item $\frac{2}{x+3} + \frac{3}{x-1}$
+\end{multicols}
+\vfill 
+\begin{multicols}{2}
+    \item $\frac{3}{x-3} - \frac{7}{x+3}$
+    \item $\frac{7x+3}{x-7} + \frac{1}{x+4}$
+\end{multicols}
+\vfill  
+\end{enumerate}
+\end{example}
+
+\end{document}

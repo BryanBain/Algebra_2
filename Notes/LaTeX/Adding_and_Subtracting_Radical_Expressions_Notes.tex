@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{amsmath, bm, enumerate, multicol, pgfplots, sfmath, tcolorbox}
+\pgfplotsset{compat = newest}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[top=0.5in, right=1in, bottom=0.5in, left=1in]{geometry}
+\pagestyle{empty}
+\raggedright
+\everymath{\displaystyle}
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   {\color{red}\textbf{Example~\theexample. #1}}}{\medskip}
+
+\begin{document}
+
+\section*{Adding and Subtracting Radical Expressions}
+
+\begin{tcolorbox}[colframe=orange!70!white, coltitle=black, title=\textbf{Summary}]
+\begin{enumerate}
+    \item We can add or subtract like radicals just as we can add or subtract like terms.
+\end{enumerate}
+\end{tcolorbox}
+\bigskip 
+
+Just like we can add $2x + 3x$ to get $5x$, we can also add like radical expressions together.   \newline\\
+
+\begin{tcolorbox}[colframe=blue!70!white, colback = white, coltitle=white, title=\textbf{Like Radicals}]
+Radicals with the same root and the same radicand.
+\end{tcolorbox}
+\bigskip 
+
+\begin{center}
+\begin{tabular}{l|c}
+Like Radicals   &   Not Like Radicals \\ \hline \\[2pt]
+$2\sqrt{7} + 3\sqrt{7}$ &   $2\sqrt{7} + 3\sqrt[3]{7}$ (Different roots)  \\[0.25in]
+$5\sqrt[3]{10} - 9\sqrt[3]{10}$ & $8\sqrt{10} - 3\sqrt{6}$ (Different radicands)   \\[5pt]
+\end{tabular}
+\end{center}
+\bigskip 
+
+\begin{example}
+Add or subtract each. Assume all variables represent positive real numbers.
+\begin{multicols}{3}
+\begin{enumerate}[(a)]
+    \item $4\sqrt{11} + 8\sqrt{11}$
+    \item $5\sqrt[3]{3x} - 7\sqrt[3]{3x}$
+    \item $4\sqrt{5} + 4\sqrt[3]{5}$
+\end{enumerate}
+\end{multicols}
+\end{example}
+
+\newpage 
+
+Sometimes you have to simplify before you can combine like radicals.
+
+\begin{example}
+Add or subtract each. Assume all variables represent positive real numbers.
+\begin{multicols}{2}
+\begin{enumerate}[(a)]
+    \item $\sqrt{20} + 2\sqrt{45}$
+    \item $\sqrt[3]{54} - 5\sqrt[3]{16} + \sqrt[3]{2}$
+\end{enumerate}
+\end{multicols}
+\vfill 
+\begin{multicols}{2}
+\begin{enumerate}[(a)]  \setcounter{enumi}{2}
+    \item $\sqrt{27x}-2\sqrt{9x}+\sqrt{72x}$
+    \item $\sqrt[3]{48x^4} + \sqrt[3]{6x^4}$
+\end{enumerate}
+\end{multicols}
+\end{example}
+\vfill 
+
+\end{document}

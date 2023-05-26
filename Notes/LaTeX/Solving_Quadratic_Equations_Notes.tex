@@ -1,0 +1,314 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, array, enumerate, tikz, multicol, hyperref, sfmath, pgfplots, tcolorbox}
+\pgfplotsset{compat = newest}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[top = 0.5in, bottom=0.5in, right = 1in, left = 1in]{geometry}
+\tikzset{>=stealth}
+\pagestyle{empty}
+\raggedright
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   {\color{red}\textbf{Example~\theexample. #1}}}{\medskip}
+
+\begin{document}
+
+\section*{Solving Quadratic Equations}
+
+\begin{tcolorbox}[colframe=orange!70!white, coltitle=black, title=\textbf{Summary}]
+\begin{enumerate}
+    \item Quadratic equations are in the form $ax^2 + bx + c = 0$
+    \item When solving quadratic equations, \textbf{always} get the equation equal to 0 first.
+    % \item For equations in the form $ax^2 + bx + c = 0$, the quadratic formula is 
+    % \[
+    % x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}, \quad a \neq 0 
+    % \]
+\end{enumerate}
+\end{tcolorbox}
+
+\subsection*{Solving Quadratic Equations by Factoring}
+
+Previously, we looked at factoring quadratic expressions in the forms
+\[
+x^2 + bx + c \quad \mathrm{and} \quad ax^2 + bx + c
+\]
+\smallskip 
+
+\parbox{3in}{After getting the equation equal to 0 (if necessary), some equations can quickly be solved by factoring.}
+\bigskip 
+
+You will get your equation in the form
+\[
+({\color{blue}\texttt{expression}})({\color{blue}\texttt{expression}}) = 0
+\]
+
+Set each {\color{blue}\texttt{expression}} equal to 0 and solve.
+\bigskip 
+
+% \begin{minipage}{0.4\textwidth}
+% For $x^2 + bx + c = 0$:
+% \begin{itemize}
+%     \item The {\color{violet}\textbf{sum}} of the answers is $-b$.   
+%     \item The {\color{orange}\textbf{product}} of the answers is $c$
+% \end{itemize}
+% \end{minipage}
+% \hspace{0.1in}
+% \begin{minipage}{0.4\textwidth}
+% For $ax^2 + bx + c = 0$:
+% \begin{itemize}
+%     \item The {\color{violet}\textbf{sum}} of the answers is $-\frac{b}{a}$.    
+%     \item The {\color{orange}\textbf{product}} of the answers is $\frac{c}{a}$
+% \end{itemize}
+% \end{minipage}
+
+\begin{example}
+Solve each.
+\begin{enumerate}[(a)]
+\begin{multicols}{3}
+    \item $x^2 + x - 12 = 0$
+    \item $x^2 + 9x + 10 = 2x$
+    \item $7x^2 - 7x - 1 = x^2 + 4$
+\end{multicols}
+\end{enumerate}
+\end{example}
+\vfill 
+
+\subsection*{Solving Quadratic Equations That Can't Be Factored}
+
+Many quadratic equations can't be solved by factoring.
+\bigskip 
+
+However, after getting the equation equal to 0, \textbf{we can write the other side in vertex form and solve.} \bigskip 
+
+Before that, though, let's take a look at some very basic quadratic equations:
+
+\begin{example}
+    Solve each.
+\begin{enumerate}[(a)]
+\begin{multicols}{3}
+    \item $x^2 = 49$
+    \item $x^2 = 100$
+    \item $(x-1)^2 = 25$
+\end{multicols}
+\end{enumerate}
+\end{example}
+
+\vfill 
+\newpage 
+
+\begin{example}
+For each of the following,
+\begin{enumerate}
+    \item Get the equation equal to 0 (if necessary).
+    \item Write the other side in vertex form: $a(x-h)^2 + k$
+    \item Solve for $x$.
+\end{enumerate}
+\begin{enumerate}[(a)]
+\begin{multicols}{2}
+    \item $5x^2 + 3x - 21 = 0$
+    \item $8x^2 + 5x - 6 = 0$ 
+\end{multicols}
+\vfill 
+\begin{multicols}{2}
+    \item $2x^2 + 9x - 32 = -9$
+    \item $-x^2 + 5x - 22 = -8x^2$ 
+\end{multicols}
+\vfill 
+\end{enumerate}
+\end{example}
+
+
+%%%%%
+
+\iffalse
+
+\subsection*{The Quadratic Formula}
+
+For quadratic equations that cannot be factored (and also those that can), there is the {\color{violet}\textbf{quadratic formula}}.
+\vspace{1.25in}
+
+\begin{center}
+\setlength{\extrarowheight}{5pt}
+\begin{tabular}{c|c}
+    \textsc{Pros} & \textsc{Cons} \\ \hline 
+    Works for {\color{red}\textbf{any}} quadratic equation & Involves some work/calculation \\[5pt]
+\end{tabular}
+\end{center}
+\vspace{2in}
+
+\begin{tcolorbox}[colframe=red!40!blue, coltitle=white, title=\textbf{Quadratic Formula}]
+For an equation in the form $ax^2 + bx + c = 0$, where $a \neq 0$,
+\[
+x = \frac{-b \pm \sqrt{|b|^2-4ac}}{2a}
+\]
+\end{tcolorbox}
+
+\newpage
+
+\begin{example}
+Solve each. Leave square roots in your answers, but simplify what is inside them.
+\begin{enumerate}[(a)]
+    \item $x^2 - 6x + 3 = 0$    \vfill
+    \item $5x^2 + 7x - 5 = 4$   \vfill
+    \item $2x^2 - 7x - 7 = 8$   \vfill \newpage
+\end{enumerate}
+\end{example}
+
+\fi 
+%%%%%%%
+
+% \subsection*{The Discriminant}
+
+% In the quadratic formula, 
+% \[
+% x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
+% \]
+% \vspace{0.5in}
+% the expression inside the square root
+% \[
+% b^2 - 4ac
+% \]
+% \vspace{0.5in}
+% is called the {\color{blue}\textbf{discriminant}}.
+
+% \textsc{Properties of the Discriminant}:
+% \begin{itemize}
+%     \item If $b^2 - 4ac$ is positive, there are 2 different values for $x$.   \vspace{1in}
+%     \item If $b^2 - 4ac$ is 0, there is 1 value for $x$ that is repeated.   \vspace{1in}
+%     \item If $b^2 - 4ac$ is negative, there are no real values for $x$ (more on this later in the course). \vspace{1in}
+%     \item If $\sqrt{b^2-4ac}$ is a positive \emph{rational} number, the original problem can be factored.
+% \end{itemize}
+
+% \newpage 
+
+% \subsection*{Solving $\pmb{x^2 + bx + c = 0}$ When $\pmb{a = 1}$}
+
+% $x^2 - 6x + 8 = 0$: \newline\\
+% $a = 1, \quad b = -6, \quad c = 8$  
+
+% \vspace{0.75in}
+
+% Recall that 
+% \begin{itemize}
+%     \item the {\color{violet}\textbf{sum}} of the answers is $-b$.    
+%     \item the {\color{orange}\textbf{product}} of the answers is $c$
+% \end{itemize}
+% \vspace{0.25in}
+
+% \begin{tikzpicture}[scale=0.7]
+% \begin{axis}
+% [axis lines = middle, xmin = -1, xmax = 5, xtick distance = 1, ymin = -2, ymax = 2]
+% \addplot [blue, very thick, samples=200] {x^2-6*x+8};
+% \addplot [blue, mark = *, only marks] coordinates {(2,0) (4,0)};
+% % \addplot [red, mark = triangle*, mark options = {scale = 1.5, rotate = 180}] coordinates {(3,0)};
+% % \node at (axis cs: 3,0) [red, yshift=0.25cm] {$m$};
+% \end{axis}
+% \end{tikzpicture}
+
+% \vspace{0.5in}
+
+% Let's look at the \emph{mean} of the answers. 
+
+% \begin{align*}
+% \text{Mean} &= \text{Sum $\div$ number of values} \\
+% \text{Mean} &= -b \div 2 \\
+% \text{Mean} &= -\tfrac{b}{2} \\
+% \text{Mean} &= \text{$x$-coordinate of vertex}
+% \end{align*}
+
+% \vspace{0.25in}
+
+% \begin{tikzpicture}[scale=0.7]
+% \begin{axis}
+% [axis lines = middle, xmin = -1, xmax = 5, xtick distance = 1, ymin = -2, ymax = 2]
+% \addplot [blue, very thick, samples=200] {x^2-6*x+8};
+% \addplot [blue, mark = *, only marks] coordinates {(2,0) (4,0)};
+% \addplot [red, mark = *, only marks, mark options = {scale = 1.25}] coordinates {(3,-1)} node [below] {$m$};
+% \addplot [red, mark = triangle*, mark options = {scale = 1.5, rotate = 180}] coordinates {(3,0)};
+% \node at (axis cs: 3,0) [red, yshift=0.25cm] {$m$};
+% \end{axis}
+% \end{tikzpicture}
+
+% \newpage 
+
+% \begin{center}
+% And, in general, for when the distance ($d$) from $m$ to an $x$-intercept is not a whole number:
+% \end{center}
+
+% \begin{minipage}{0.3\textwidth}
+% \begin{tikzpicture}[scale=0.9]
+% \begin{axis}
+% [axis lines = middle, xmin = -1, xmax = 5, xtick distance = 1, ymin = -2, ymax = 2]
+% \addplot [blue, very thick, samples=200] {x^2-6*x+8};
+% \addplot [blue, mark = *, only marks] coordinates {(2,0) (4,0)};
+% \addplot [red, mark = *, only marks, mark options = {scale = 1.25}] coordinates {(3,-1)} node [below] {$m$};
+% \addplot [red, mark = triangle*, mark options = {scale = 1.5, rotate = 180}] coordinates {(3,0)};
+% \node at (axis cs: 3,0) [red, yshift=0.25cm] {$m$};
+% \draw [decorate, violet, thick,
+%     decoration = {brace, raise=0.45cm}] 
+%     (2,0) --  (3,0) 
+%     node [pos=0.5, above=15pt, violet] {$\pmb{m-d}$};
+% \draw [decorate, violet, thick,
+%     decoration = {brace, raise=0.45cm}] 
+%     (3,0) --  (4,0) 
+%     node [pos=0.5, above=15pt, violet] {$\pmb{m+d}$};
+% \end{axis}
+% \end{tikzpicture}
+% \end{minipage}
+% \hspace{0.25in}
+% \begin{minipage}{0.4\textwidth}
+% \begin{align*}
+%     (m+d)(m-d) &= c \\[12pt]
+%     % m^2 - d^2 &= c \\[12pt]
+%     % d^2 &= m^2 - c \\[12pt]
+%     % d &= \sqrt{m^2 - c} \\
+% \end{align*}
+% \end{minipage}
+% % \begin{align*}
+% %     x &= m \pm d \\[0.25in]
+% %     x &= m \pm \sqrt{m^2-c} \\
+% % \end{align*}
+
+% \vspace{1.25in}
+
+% \begin{example}
+% Solve each. Exact and simplified answers only.
+% \begin{enumerate}[(a)]
+% \item $x^2 - 6x + 3 = 0$    \vfill 
+% \begin{multicols}{2}
+% \item $x^2 + 5x - 1 = 0$   
+% \item $x^2 - 9x = -4$
+% \end{multicols}
+% \end{enumerate} \vfill 
+% \end{example}
+
+% \newpage 
+
+% \subsection*{Solving $\pmb{ax^2 + bx + c = 0}$ When $\pmb{a \neq 1}$}
+
+% For those equations where $a \neq 1$,
+% \begin{enumerate}
+%     \item Divide everything on both sides by $a$
+%     \item Proceed as in the previous example
+% \end{enumerate}
+
+% \vspace{1in}
+
+% $2x^2 - 5x - 8 = 0$
+
+% \vspace{2.5in}
+
+% \begin{example}
+% Solve each. Exact and simplified answers only. \emph{Don't forget to get the equation equal to 0 first.}
+% \begin{multicols}{2}
+% \begin{enumerate}[(a)] 
+%     \item $5x^2 + 7x - 9 = 0$   
+%     \item $2x^2 - 7x - 7 = 8$   
+% \end{enumerate}
+% \end{multicols}
+% \vfill 
+% \end{example}
+
+
+
+\end{document}

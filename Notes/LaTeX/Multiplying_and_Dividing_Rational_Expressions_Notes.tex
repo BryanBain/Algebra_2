@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, bm, tikz, mathtools, tcolorbox, array, sfmath, enumerate, multicol, pgfplots}
+\renewcommand{\familydefault}{\sfdefault}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{arrows.meta}
+\everymath{\displaystyle}
+\tikzset{>=stealth}
+\tikzstyle{input} = [circle, text centered, radius = 1cm, draw = black]
+\tikzstyle{function} = [rectangle, text centered, minimum width = 2cm, minimum height = 1cm, draw = black]
+\usepackage[top = 0.25in, bottom = 0.25in, left = 1in, right = 1in]{geometry}
+\pagestyle{empty}
+\raggedright
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   {\color{red}\textbf{Example~\theexample. #1}}}{\medskip}
+
+\begin{document}
+
+\section*{Multiplying and Dividing Rational Expressions}
+
+\begin{tcolorbox}[colframe=orange!70!white, coltitle=black, title=\textbf{Summary}]
+\begin{enumerate}
+    \item Factor and then divide out common factors.
+    \item Multiply numerators and multiply denominators.
+    \item When dividing fractions, multiply by the reciprocal of the second fraction.
+\end{enumerate}
+\end{tcolorbox}
+\bigskip 
+
+To multiply rational expressions:
+\begin{enumerate}
+    \item Factor all numerators \& denominators completely.
+    \item Divide out common factors.
+    \item Multiply the results.
+\end{enumerate}
+\bigskip 
+
+\begin{example}
+Simplify each.
+\begin{enumerate}[(a)]
+\begin{multicols}{2}
+    \item $\frac{x+3}{x-4} \cdot \frac{x^2-2x-8}{x^2-9}$
+    \item $\frac{8x+32}{x-7} \cdot \frac{x^2-4x-21}{4x^2-64}$
+\end{multicols}
+\vfill 
+\begin{multicols}{2}
+    \item $\frac{5x+5}{7x-7x^2} \cdot \frac{2x^2+x-3}{4x^2-9}$
+    \item $\frac{4x+8}{6x-3x^2} \cdot \frac{3x^2-4x-4}{9x^2-4}$
+\end{multicols}
+\end{enumerate}
+\end{example}
+
+\vfill 
+\newpage 
+
+When dividing rational expressions, multiply by the first expression by the \emph{reciprocal} of the second expression.
+\bigskip 
+
+\begin{example}
+Simplify each.
+\begin{enumerate}[(a)]
+\begin{multicols}{2}
+    \item $\frac{4x^2-25}{2} \div \frac{2x+5}{14}$
+    \item $(9x^2-49) \div \frac{3x-7}{9}$
+\end{multicols}
+\vfill 
+\begin{multicols}{2}
+    \item $\frac{x^2+3x-10}{2x} \div \frac{x^2-5x+6}{x^2-3x}$
+    \item $\frac{x^2-x-12}{5x} \div \frac{x^2-10x+24}{x^2-6x}$
+\end{multicols}
+\end{enumerate}
+\end{example}
+
+\vfill 
+
+\end{document}

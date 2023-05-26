@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{amsmath, bm, enumerate, multicol, pgfplots, sfmath, tcolorbox}
+\pgfplotsset{compat = newest}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[top=0.5in, right=1in, bottom=0.5in, left=1in]{geometry}
+\pagestyle{empty}
+\raggedright
+% \everymath{\displaystyle}
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   {\color{red}\textbf{Example~\theexample. #1}}}{\medskip}
+
+\begin{document}
+
+\section*{Rationalizing Denominators}
+
+\begin{tcolorbox}[colframe=orange!70!white, coltitle=black, title=\textbf{Summary}]
+\begin{enumerate}
+    \item We multiply the numerator and denominator by a radical expression to rationalize denominators.
+    \item The goal is to get rid of any and all radicals in the denominator.
+\end{enumerate}
+\end{tcolorbox}
+\vspace{0.5in}
+
+\parbox{4in}{For the expression $\frac{\sqrt{5}}{\sqrt{2}}$, we can find an equivalent expression that does \\[12pt] not contain a radical in the denominator:}
+\vspace{0.5in}
+
+\[
+\frac{\sqrt{5}}{\sqrt{2}}
+\]
+\vspace{0.75in}
+
+The above process is called {\color{blue}\textbf{rationalizing the denominator}}.
+\vspace{1in}
+
+\begin{example}
+Rationalize each of the following.
+\begin{multicols}{2}
+\begin{enumerate}[(a)]
+    \item $\frac{2}{\sqrt{5}}$
+    \item $\frac{2\sqrt{16}}{\sqrt{9x}}$
+\end{enumerate}
+\end{multicols}
+\vfill 
+\begin{multicols}{2}
+\begin{enumerate}[(a)]  \setcounter{enumi}{2}
+    \item $\sqrt{\frac{7x}{3y}}$
+    \item $\sqrt[3]{\frac{1}{2}}$
+\end{enumerate}
+\end{multicols}
+\end{example}
+\vfill 
+\newpage 
+
+How do we go about rationalizing an expression such as $\frac{5}{\sqrt{3}-2}$?
+\vspace{4in}
+
+\begin{example}
+Rationalize each of the following.
+\begin{multicols}{2}
+\begin{enumerate}[(a)]
+    \item $\frac{2}{3\sqrt{2}+4}$
+    \item $\frac{\sqrt{6}+2}{\sqrt{5}-\sqrt{3}}$
+\end{enumerate}
+\end{multicols}
+\end{example}
+
+
+\end{document}

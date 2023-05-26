@@ -1,0 +1,261 @@
+\documentclass{article}
+\usepackage{amsmath, bm, enumerate, multicol, pgfplots, sfmath, tcolorbox}
+\pgfplotsset{compat = newest}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[top=0.5in, right=1in, bottom=0.5in, left=1in]{geometry}
+\pagestyle{empty}
+\raggedright
+\everymath{\displaystyle}
+
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   {\color{red}\textbf{Example~\theexample. #1}}}{\medskip}
+
+\begin{document}
+
+\section*{Rational Exponents}
+
+\begin{tcolorbox}[colframe=orange!70!white, colback = white, coltitle=black, title=\textbf{Summary}]
+\begin{enumerate}
+    \item $\sqrt[root]{x^{power}} = x^{power/root}$
+\end{enumerate}
+\end{tcolorbox}
+\bigskip 
+
+\begin{tcolorbox}[colframe=green!60!black, colback = white,title=\textbf{Radicand}]
+For $\sqrt[n]{a}$, the \textbf{radicand} is $\bm{a}$.
+\end{tcolorbox}
+\bigskip
+
+We are going to build the intuition of rational exponents.
+
+\begin{itemize}
+\begin{multicols}{3}
+    \item $(12^5)^9 = $
+    \item $(12^6)^7 = $
+    \item $(12^{\tfrac{1}{7}})^7 = $
+\end{multicols}
+\vspace{0.25in}
+    \item Let $x = 12^{\tfrac{1}{7}}$. Substitute $x$ into the equation below
+    \[
+    (12^{\tfrac{1}{7}})^7 = 12
+    \]
+\vspace{0.25in} 
+    \item Solve for $x$ using radicals.
+    \[
+    x^7 = 12
+    \]
+\vspace{0.25in}
+    \item We have $x = 12^{\tfrac{1}{7}}$ and $x = \sqrt[7]{12}$:
+    \[
+    \boxed{12^{\tfrac{1}{7}} = \sqrt[7]{12}}
+    \]
+\end{itemize}
+
+% What is $\left(\sqrt[3]{64}\right)^2$? \\[0.5in]
+
+% Step 1: Evaluate $\sqrt[3]{64} = 4$ \newline\\
+% Step 2: Raise 4 to the 2nd power: $4^2 = 16$.
+% \vfill 
+
+% To put things visually, suppose the block below represents 64:  \newline\\
+
+% \begin{center}
+%     \begin{tikzpicture}[scale=0.5]
+%     \draw (0,0) rectangle (15,1);
+%     \node at (0,0) [below] {1};
+%     \node at (15,0) [below] {64};
+%     \end{tikzpicture}
+% \end{center}
+% \vfill 
+
+% Since we are taking the cube root, we can divide the large block up into 3 equal blocks where {\color{blue}\textbf{we multiply by 4 to get each new number}}. 
+% \begin{center}
+%     \begin{tikzpicture}[scale=0.5]
+%     \draw (0,0) rectangle (15,1);
+%     \node at (0,0) [anchor=north] {1};
+%     \node at (15,0) [anchor=north] {64};
+%     \draw (5,0) -- (5,1);
+%     \node at (5,0) [anchor=north] {4};
+%     \draw (10,0) -- (10,1);
+%     \node at (10,0) [anchor=north] {16};
+%     \end{tikzpicture}
+% \end{center}
+% \vspace{0.5in}
+
+% \newpage 
+
+% The exponent of 2 in $\left(\sqrt[3]{64}\right)^2$ means that we shade 2 of the blocks:    \\[0.5in]
+% \begin{center}
+%     \begin{tikzpicture}[scale=0.5]
+%     \draw (0,0) [fill=yellow, color=yellow] rectangle (5,1);
+%     \draw (5,0) [fill=yellow, color=yellow] rectangle (10,1);
+%     \draw (0,0) rectangle (15,1);
+%     \node at (0,0) [anchor=north] {1};
+%     \node at (15,0) [anchor=north] {64};
+%     \draw (5,0) -- (5,1);
+%     \node at (5,0) [anchor=north] {4};
+%     \draw (10,0) -- (10,1);
+%     \node at (10,0) [anchor=north] {16};
+%     \end{tikzpicture}
+% \end{center}
+% \vfill 
+
+
+% This is a visual approach to the idea that $\left(\sqrt[3]{64}\right)^2 = 64^{2/3}$   \newline\\
+
+\vspace{0.5in}
+
+In general,
+\[
+\boxed{\sqrt[\text{root}]{x^{\text{power}}} = x^{\text{power/root}}}
+\]
+\bigskip 
+
+\begin{example} 
+Write each of the following in radical form.	
+\begin{multicols}{3}
+\begin{enumerate}[(a)]
+    \item $5^{1/2}$ 
+    \item $(-9)^{5/3}$
+    \item $x^{1/3}$
+\end{enumerate}	
+\end{multicols}
+\end{example}
+\vfill 
+
+\begin{example} 
+Write each of the following using rational exponents.	
+\begin{multicols}{3}
+\begin{enumerate}[(a)]
+    \item $\sqrt{6}$   
+    \item $\sqrt[3]{8}$ 
+    \item $\sqrt[4]{x^3}$
+\end{enumerate}
+\end{multicols}
+\end{example}
+\vfill 
+
+\newpage 
+
+
+
+% When dealing with \textbf{even} roots and exponents, keep in mind that the root and exponent don't ``cancel each other out."
+% \newline\\
+
+% For instance, $\sqrt{5^2}=\sqrt{25}=5$, but $\sqrt{(-5)^2}=\sqrt{25}=5$.
+% \vspace{0.5in}
+
+% The graphs of $y = \sqrt{x^2}$ and $y=|x|$ are shown. Notice they are identical.
+% \newline\\
+
+% \begin{tabular}{cc}
+%     {\color{blue}$y = \sqrt{x^2}$}    &   {\color{red}$y = |x|$}   \\[11pt]
+%     \begin{tikzpicture}[scale=0.65]
+%     \begin{axis}
+%     [
+%         xmin = -5,
+%         xmax = 5,
+%         ymin = -5,
+%         ymax = 5,
+%         axis lines = middle,
+%         grid,
+%         minor tick num = 1
+%     ]
+%     \addplot [<->, color = blue, line width = 1.5, domain=-4.5:4.5, samples = 300] {abs(x)};
+%     \end{axis}
+%     \end{tikzpicture}
+%     &
+%     \begin{tikzpicture}[scale=0.65]
+%     \begin{axis}
+%     [
+%         xmin = -5,
+%         xmax = 5,
+%         ymin = -5,
+%         ymax = 5,
+%         axis lines = middle,
+%         grid,
+%         minor tick num = 1
+%     ]
+%     \addplot [<->, color = red, line width = 1.5, domain=-4.5:4.5, samples = 300] {abs(x)};
+%     \end{axis}
+%     \end{tikzpicture}
+% \end{tabular}
+% \vspace{0.5in}
+
+% Thus, for any real number $x$, $\sqrt{x^2} = |x|$.
+% \vspace{0.5in}
+
+
+% Odd roots, such as $\sqrt[3]{\quad}$ do not follow the same rule as even roots.
+% \newline\\
+
+% So for any real number $x$, $\sqrt[3]{x^3} = x$.
+% \vspace{1in}
+
+% And, in general, for any real number $x$,	
+% \begin{enumerate}
+% 	\item If $n$ is even, $\sqrt[n]{x^n} = |x|$.	
+% 	\item If $n$ is odd, $\sqrt[n]{x^n} = x$.
+% \end{enumerate}
+% \vfill
+
+% \emph{Note}: If you are told that variables represent positive values, then you do not need the absolute value bars for even roots. \newline
+
+% \textit{i.e.} If $n$ is even and $x$ is a positive value, then $\sqrt[n]{x^n} = x$.
+% \vfill 
+% \newpage
+
+\begin{example}
+Simplify each of the following. Exact answers only.
+\begin{multicols}{2}
+\begin{enumerate}[(a)]
+    \item $\sqrt{72x^2}$ 
+    \item $\sqrt{175x^3}$
+\end{enumerate}
+\end{multicols}
+\vfill 
+
+\begin{multicols}{2}
+\begin{enumerate}[(a)]  \setcounter{enumi}{2}
+    \item $\sqrt{18x^4}$    
+    \item $\sqrt{65x^5y^3}$  
+\end{enumerate}
+\end{multicols}
+\vfill 
+\begin{multicols}{2}
+\begin{enumerate}[(a)]  \setcounter{enumi}{4}
+    \item $\sqrt[3]{27x^7y^8}$
+    \item $\sqrt[3]{128x^6}$    
+\end{enumerate}
+\end{multicols}
+\end{example}
+\vfill 
+
+% \subsection*{Operations with Radical Expressions.}
+
+% Once we have simplified the radicals, we can add and subtract radical expressions with the same radicands and roots. This is essentially combining like terms.    \vspace{0.75in}
+
+
+% {\color{red}\textbf{Example 4.}} Simplify each of the following. Exact answers only.	
+% \begin{enumerate}[(a)]
+%     \item $\sqrt{98} + \sqrt{8}$    \vfill 
+%     \item $\sqrt{108x} - \sqrt{300x}$   \vfill 
+%     \item $4\sqrt{6} + 3\sqrt{54} - 5\sqrt{45}$ \vfill \newpage
+% \end{enumerate}
+
+% We can also multiply and divide radical expressions. \newline\\
+% It may be helpful to convert them to rational exponent form first, and then use your laws of exponents.
+% \vspace{0.75in}
+
+% {\color{red}\textbf{Example 5.}} Simplify each of the following. Leave no radical expressions in a denominator.	
+% \begin{enumerate}[(a)]
+%     \item $\sqrt{x^5} \cdot \sqrt{x^2}$ \vfill
+%     \item $\sqrt{a^3} \cdot \sqrt[3]{a^2}$  \vfill
+%     \item $\sqrt[3]{y^6} \cdot \sqrt{y^3}$  \vfill \newpage
+%     \item $\dfrac{\sqrt{x^5}}{\sqrt{x}}$    \vfill
+%     \item $\dfrac{7}{\sqrt{2}}$ \vfill
+%     \item $\dfrac{\sqrt[3]{y^6}}{\sqrt{y^3}}$  \vfill                 
+% \end{enumerate}
+
+\end{document}
